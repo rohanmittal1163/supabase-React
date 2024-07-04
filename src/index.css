@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+	background-color: #1c1c1c;
+}
+.blurry-image {
+	filter: blur(20px); /* Initial blur effect */
+	transition: filter 0.3s ease-in-out;
+	height: 240px;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+}
+
+.image-loaded {
+	filter: blur(0); /* Remove blur effect when high-resolution image is loaded */
+}
